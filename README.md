@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lid.Dev Site
 
-## Getting Started
+Este é projeto foi desenvolvido para publicar meu trabalho como Desenvolvedora Web, para clientes particulares. Desenvolvi minha propria empresa de desenvolviemnto.
 
-First, run the development server:
+## Funcionalidades implementadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Landing page moderna** com efeito de fundo animado personalizado (`BackgroundGradientAnimation`)
+- **Header fixo** com logo e efeito de transição ao rolar a página
+- **Efeito de estrelas cadentes** com o componente `ShootingStars`
+- **Layout responsivo** e estilização com [Tailwind CSS](https://tailwindcss.com)
+- **Botões de ação** para solicitar orçamento e acessar portfólio
+- Organização de componentes em pastas (`components/sections`, `components/ui`, `components/effects`)
+- Utilização de hooks do React (`useState`, `useEffect`) para interatividade
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Instalação
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Instale as dependências:
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   ```
 
-## Learn More
+3. Acesse [http://localhost:3000](http://localhost:3000) no navegador.
 
-To learn more about Next.js, take a look at the following resources:
+## Estrutura de Pastas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/components/sections/Hero.tsx` — Seção principal com animação de fundo e conteúdo centralizado
+- `src/components/effects/BackgroundGradientAnimation.tsx` — Componente de fundo animado
+- `src/components/ui/ShootingStars.tsx` — Efeito de estrelas cadentes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Tecnologias utilizadas
 
-## Deploy on Vercel
+- [Next.js](https://nextjs.org)
+- [React](https://react.dev)
+- [Tailwind CSS](https://tailwindcss.com)
+- [TypeScript](https://www.typescriptlang.org)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Como personalizar
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Edite o conteúdo da landing page em `src/components/sections/Hero.tsx`
+- Altere as cores e efeitos no componente `BackgroundGradientAnimation`
+- Ajuste as estrelas cadentes em `ShootingStars.tsx`
+
+## Deploy
+
+A maneira mais fácil de fazer deploy é usando a [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
+
+---
+
+Projeto desenvolvido por Lidiane.
