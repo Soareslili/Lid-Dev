@@ -12,6 +12,7 @@
     "@react-three/fiber": "^9.1.4",
     "aos": "^3.0.0-beta.6",
     "next": "15.3.4",
+    "phosphor-react": "^1.4.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "three": "^0.178.0"
