@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import Lidiane from "@/assets/Lidiane.jpg";
+import Lidiane from "../../../public/assets/Lidiane.jpg";
 import { NotePencil, DeviceMobileCamera, Code, BugBeetle, RocketLaunch, Wrench } from "phosphor-react";
 
 import { ScrollProgress } from "@/components/sections/ScrollProgress";
@@ -48,7 +48,7 @@ export function About() {
 
       <section id="about" className="bg-black text-white min-h-screen p-4 md:px-20 md:py-12 overflow-hidden">
         <div className="h-full flex flex-col md:flex-row items-center justify-between gap-12 mt-40 mb-50">
-          {/* Texto */}
+        
           <div className="flex flex-col items-start text-left max-w-3xl" data-aos="fade-right">
             <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-purple-700 to-purple-400 animate-gradient-x mb-6">
               Sobre mim
@@ -61,7 +61,7 @@ export function About() {
             </div>
           </div>
 
-          {/* Imagem */}
+ 
           <div className="relative w-[320px] h-[450px] md:w-[420px] md:h-[580px] rounded-3xl overflow-hidden shadow-lg" data-aos="fade-left">
             <Image
               src={Lidiane}
@@ -75,7 +75,7 @@ export function About() {
           </div>
         </div>
 
-        {/* Etapas do Projeto */}
+   
         <div className="mt-20 w-full flex flex-col items-center py-12 px-4 bg-gradient-to-b from-black via-zinc-900 to-black text-white">
           <h3 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 animate-gradient-x mb-10 text-center">
             Etapas do Projeto
@@ -107,7 +107,7 @@ export function About() {
             Solicitar Orçamento
           </a>
 
-          {/* Estilos extras */}
+        
           <style jsx global>{`
             #about::-webkit-scrollbar {
               display: none;

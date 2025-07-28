@@ -5,6 +5,8 @@ import "aos/dist/aos.css";
 
 import { About } from "@/components/sections/About";
 import { Hero } from "@/components/sections/Hero";
+import { PortfolioSection } from "@/components/sections/Portfolio";
+
 
 export default function Home() {
   useEffect(() => {
@@ -15,6 +17,7 @@ export default function Home() {
     <>
       <Hero />
       <About />
+      <PortfolioSection/>
     </>
   );
 }
