@@ -12,6 +12,13 @@ module.exports = {
     animation: {
       'gradient-x': 'gradientX 6s ease infinite',
     },
+     maxWidth: {
+        container: "1280px",
+      },
+       animation: {
+        marquee: 'marquee var(--duration) linear infinite',
+      },
+     
     keyframes: {
       gradientX: {
         '0%, 100%': { backgroundPosition: '0% 50%' },
@@ -23,4 +30,4 @@ module.exports = {
     },
   },
 },
-};
+}

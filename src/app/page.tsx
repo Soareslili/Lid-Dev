@@ -6,6 +6,12 @@ import "aos/dist/aos.css";
 import { About } from "@/components/sections/About";
 import { Hero } from "@/components/sections/Hero";
 import { PortfolioSection } from "@/components/sections/Portfolio";
+import Testimonials from "@/components/sections/Testimonials";
+
+
+
+
+
 
 
 export default function Home() {
@@ -18,6 +24,10 @@ export default function Home() {
       <Hero />
       <About />
       <PortfolioSection/>
+      <Testimonials />
+     
+    
+  
     </>
   );
 }

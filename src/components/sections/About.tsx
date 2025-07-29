@@ -102,7 +102,7 @@ export function About() {
             href="#contato"
             className="mt-14 inline-block px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-500 text-white font-bold rounded-full shadow-lg hover:brightness-110 transition-all"
             data-aos="zoom-in-up"
-            data-aos-delay={etapas.length * 500}
+            data-aos-delay={etapas.length * 300}
           >
             Solicitar Orçamento
           </a>

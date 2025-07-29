@@ -12,7 +12,7 @@
     "@react-three/fiber": "^9.1.4",
     "aos": "^3.0.0-beta.6",
     "clsx": "^2.1.1",
-    "framer-motion": "^12.23.3",
+    "framer-motion": "^12.23.11",
     "next": "15.3.4",
     "ogl": "^1.0.11",
     "phosphor-react": "^1.4.1",
