@@ -6,6 +6,7 @@ import { ShootingStars } from "@/components/ui/ShootingStars";
 export function Hero() {
 
 
+
   const [menuOpen, setMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
@@ -31,87 +32,82 @@ export function Hero() {
         <div className="stars absolute inset-0" />
       </div>
 
-    <header
-      className={`fixed top-0 left-0 z-50 w-full transition-colors duration-300 ${
-        scrolled ? 'bg-black/70 shadow-md backdrop-blur' : 'bg-transparent'
-      }`}
-    >
-      <div className="flex justify-between items-center px-6 py-4 md:py-6 max-w-7xl mx-auto">
-        <div className="border-4 border-purple-500 rounded-full bg-gray-900 bg-opacity-30 py-2 px-6 ml-20 animate-up-down">
-          <h1 className="text-purple-500 text-3xl font-bold">
-            Lid.<span className="text-purple-900">Dev</span>
-          </h1>
-        </div>
+      <header
+        className={`fixed top-0 left-0 z-50 w-full transition-colors duration-300 ${scrolled ? 'bg-black/70 shadow-md backdrop-blur' : 'bg-transparent'
+          }`}
+      >
+        <div className="flex justify-between items-center px-6 py-4 md:py-6 max-w-7xl mx-auto">
+          <div className="border-4 border-purple-500 rounded-full bg-gray-900 bg-opacity-30 py-2 px-6 ml-20 animate-up-down">
+            <h1 className="text-purple-500 text-3xl font-bold">
+              Lid.<span className="text-purple-900">Dev</span>
+            </h1>
+          </div>
 
-        {!menuOpen && (
-          <button
-            className="md:hidden text-4xl text-purple-900"
-            aria-label="Abrir menu"
-            onClick={() => setMenuOpen(true)}
-          >
-            &#9776;
-          </button>
-        )}
-
-        <nav
-          className={`
-            ${menuOpen ? 'flex' : 'hidden'}
-            md:flex gap-6 font-semibold transition-all duration-300
-            text-white md:text-white
-            ${menuOpen ? 'fixed inset-0 flex-col justify-center items-center bg-black/90 z-[9999]' : ''}
-            md:static md:bg-black/40 md:backdrop-blur-md md:rounded-lg md:flex-row md:relative
-          `}
-          style={menuOpen ? { position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh' } : {}}
-        >
-          {menuOpen && (
+          {!menuOpen && (
             <button
-              className="absolute top-6 right-6 text-4xl text-purple-400 md:hidden"
-              aria-label="Fechar menu"
-              onClick={() => setMenuOpen(false)}
+              className="md:hidden text-4xl text-purple-900"
+              aria-label="Abrir menu"
+              onClick={() => setMenuOpen(true)}
             >
-              &times;
+              &#9776;
             </button>
           )}
 
-          <a
-            href="#inicio"
-            onClick={() => setMenuOpen(false)}
-            className="hover:text-purple-400 transition-colors text-2xl md:text-base my-4 md:my-0"
+          <nav
+            className={`
+    ${menuOpen ? 'flex' : 'hidden'}
+    md:flex gap-6 font-semibold transition-all duration-300
+    text-white
+    ${menuOpen ? 'fixed inset-0 flex-col justify-center items-center z-[9999] backdrop-blur-md' : ''}
+    md:static md:rounded-lg md:flex-row md:relative
+  `}
+            style={menuOpen ? { position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh' } : {}}
           >
-            Início
-          </a>
+            {menuOpen && (
+              <button
+                className="absolute top-6 right-6 text-4xl text-purple-400 md:hidden"
+                aria-label="Fechar menu"
+                onClick={() => setMenuOpen(false)}
+              >
+                &times;
+              </button>
+            )}
 
-          <a
-            href="#about"
-            onClick={() => setMenuOpen(false)}
-            className="hover:text-purple-400 transition-colors text-2xl md:text-base my-4 md:my-0"
-          >
-            Sobre
-          </a>
-          <a
-            href="#portfolio"
-            onClick={() => setMenuOpen(false)}
-            className="hover:text-purple-400 transition-colors text-2xl md:text-base my-4 md:my-0"
-          >
-            Portfólio
-          </a>
-          <a
-            href="#depoimentos"
-            onClick={() => setMenuOpen(false)}
-            className="hover:text-purple-400 transition-colors text-2xl md:text-base my-4 md:my-0"
-          >
-            Depoimentos
-          </a>
-          <a
-            href="#contato"
-            onClick={() => setMenuOpen(false)}
-            className="hover:text-purple-400 transition-colors text-2xl md:text-base my-4 md:my-0"
-          >
-            Contato
-          </a>
-        </nav>
-      </div>
-    </header>
+            <a
+              href="#inicio"
+              onClick={() => setMenuOpen(false)}
+              className="hover:text-purple-400 transition-colors text-2xl md:text-base my-4 md:my-0"
+            >
+              Início
+            </a>
+
+            <a
+              href="#about"
+              onClick={() => setMenuOpen(false)}
+              className="hover:text-purple-400 transition-colors text-2xl md:text-base my-4 md:my-0"
+            >
+              Sobre
+            </a>
+
+            <a
+              href="#portfolio"
+              onClick={() => setMenuOpen(false)}
+              className="hover:text-purple-400 transition-colors text-2xl md:text-base my-4 md:my-0"
+            >
+              Portfólio
+            </a>
+
+            <a
+              href="#contato"
+              onClick={() => setMenuOpen(false)}
+              className="hover:text-purple-400 transition-colors text-2xl md:text-base my-4 md:my-0"
+            >
+              Contato
+            </a>
+          </nav>
+
+        </div>
+      </header>
 
 
 
@@ -124,17 +120,12 @@ export function Hero() {
         </p>
         <div>
           <a
-            href="/contato"
+            href="https://wa.me/5511948739869?text=Ol%C3%A1%20gostaria%20de%20um%20or%C3%A7amento"
             className="mt-8 inline-block bg-purple-600 hover:bg-purple-400 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
           >
             Solicitar Orçamento
           </a>
-          <a
-            href="/portfolio"
-            className="mt-8 inline-block ml-4 bg-gray-800 hover:bg-gray-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
-          >
-            Saiba Mais
-          </a>
+          
         </div>
       </div>
 

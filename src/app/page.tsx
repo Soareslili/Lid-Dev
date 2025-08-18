@@ -6,7 +6,10 @@ import "aos/dist/aos.css";
 import { About } from "@/components/sections/About";
 import { Hero } from "@/components/sections/Hero";
 import { PortfolioSection } from "@/components/sections/Portfolio";
-import Testimonials from "@/components/sections/Testimonials";
+import Contact from "@/components/sections/Contact";
+import Footer from "@/components/sections/Footer";
+
+
 
 
 
@@ -24,7 +27,8 @@ export default function Home() {
       <Hero />
       <About />
       <PortfolioSection/>
-      <Testimonials />
+    <Contact/>
+    <Footer />
      
     
   
