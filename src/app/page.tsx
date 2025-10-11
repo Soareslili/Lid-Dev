@@ -17,6 +17,7 @@ import Footer from "@/components/sections/Footer";
 
 
 
+
 export default function Home() {
   useEffect(() => {
     AOS.init();
@@ -24,6 +25,7 @@ export default function Home() {
 
   return (
     <>
+    
       <Hero />
       <About />
       <PortfolioSection/>

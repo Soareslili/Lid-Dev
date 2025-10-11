@@ -4,8 +4,7 @@ import { SiTiktok } from "react-icons/si";
 
 const LINKS = [
   { label: "Home", href: "#home" },
-  { label: "Sobre", href: "#sobre" },
-  { label: "Habilidades", href: "#habilidades" },
+  { label: "Sobre", href:"#about" },
   { label: "Projetos", href: "#projetos" },
   { label: "Contato", href: "#contato" },
 ];
@@ -22,18 +21,18 @@ export default function Footer() {
 
   return (
     <footer className="relative bg-[#0C0C12] text-zinc-300">
-      {/* linha superior com gradiente roxo */}
+     
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#CB6CE6]/70 to-transparent" />
 
       <div className="container mx-auto max-w-6xl px-6 py-12">
         <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
-          {/* Brand */}
+        
           <div className="text-center sm:text-left">
             <div className="text-xl font-extrabold tracking-tight text-white">Lid.Dev</div>
             <p className="text-sm text-zinc-400">Desenvolvedora Front-End</p>
           </div>
 
-          {/* Navegação */}
+       
           <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm">
             {LINKS.map((l) => (
               <Link key={l.label} href={l.href} className="transition-colors hover:text-white">
@@ -42,7 +41,7 @@ export default function Footer() {
             ))}
           </nav>
 
-          {/* Sociais */}
+        
           <div className="flex items-center gap-3">
             {SOCIAL.map(({ icon: Icon, href, label }) => (
               <a
@@ -59,7 +58,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Copyright pill */}
         <div className="mt-10 flex items-center justify-center">
           <span className="rounded-full border border-[#CB6CE6]/40 bg-[#CB6CE6]/10 px-4 py-2 text-xs font-semibold text-[#EBD0F3] shadow-[0_10px_30px_rgba(203,108,230,.25)]">
             © {year} LIDIANE SANTOS SOARES
