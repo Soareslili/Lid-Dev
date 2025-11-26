@@ -25,9 +25,9 @@ const demoItems = [
     link: "https://sorriso-feliz-cl-nica.vercel.app/",
   },
   {
-    image: "/assets/doceheloisa.avif",
-    text: "Doce e mais Doce Heloisa",
-    link: "https://projeto-doces-e-mais-doces-heloisa.vercel.app/",
+    image: "/assets/sweet.png",
+    text: "Sweet Moments",
+    link: "https://sweet-moments-pzzj.vercel.app/",
   },
   {
     image: "/assets/Tattoo.png",
