@@ -111,12 +111,12 @@ export function Hero() {
 
 
 
-      <div className="relative z-10 flex flex-col justify-center items-center mt-72">
-        <h2 id='inicio' className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+      <div id='inicio' className="relative z-10 flex flex-col justify-center items-center mt-100">
+        <h2  className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
           Sua presença online começa aqui
         </h2>
         <p className="text-lg md:text-xl max-w-2xl mx-auto text-white">
-          Desenvolvimento de sites profissionais, landing pages, lojas virtuais e presença digital com identidade forte.
+          Desenvolvimento de sites profissionais, landing pages, sites institucional, lojas virtuais e presença digital com identidade forte.
         </p>
         <div>
           <a

@@ -46,11 +46,11 @@ export function About() {
     <>
       <ScrollProgress />
 
-      <section className="bg-black text-white min-h-screen p-4 md:px-20 md:py-12 overflow-hidden">
+      <section id="about" className="bg-black text-white min-h-screen p-4 md:px-20 md:py-12 overflow-hidden">
         <div className="h-full flex flex-col md:flex-row items-center justify-between gap-12 mt-40 mb-50">
         
           <div className="flex flex-col items-start text-left max-w-3xl" data-aos="fade-right">
-            <h2 id="about" className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-purple-700 to-purple-400 animate-gradient-x mb-6">
+            <h2  className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-purple-700 to-purple-400 animate-gradient-x mb-6">
               Sobre mim
             </h2>
 

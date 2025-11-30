@@ -20,9 +20,9 @@ const demoItems = [
     link: "https://luna-petshop-xbws.vercel.app/",
   },
   {
-    image: "/assets/Dentista.png",
-    text: "Sorriso Feliz Clínica",
-    link: "https://sorriso-feliz-cl-nica.vercel.app/",
+    image: "/assets/trainer.png",
+    text: "FitCoach",
+    link: "https://fitcoach-nine.vercel.app/",
   },
   {
     image: "/assets/sweet.png",
