@@ -111,22 +111,24 @@ export function Hero() {
 
 
 
-      <div id='inicio' className="relative z-10 flex flex-col justify-center items-center mt-100">
-        <h2  className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+      <div
+        id="inicio"
+        className="relative z-10 flex min-h-screen flex-col items-center justify-center text-center px-4"
+      >
+        <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
           Sua presença online começa aqui
         </h2>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto text-white">
-          Desenvolvimento de sites profissionais, landing pages, sites institucional, lojas virtuais e presença digital com identidade forte.
+
+        <p className="text-lg md:text-xl max-w-2xl mx-auto text-white mb-8">
+          Desenvolvimento de sites profissionais, landing pages, sites institucionais, lojas virtuais e presença digital com identidade forte.
         </p>
-        <div>
-          <a
-            href="https://wa.me/5511948739869?text=Ol%C3%A1%20gostaria%20de%20um%20or%C3%A7amento"
-            className="mt-8 inline-block bg-purple-600 hover:bg-purple-400 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
-          >
-            Solicitar Orçamento
-          </a>
-          
-        </div>
+
+        <a
+          href="https://wa.me/5511948739869?text=Ol%C3%A1%20gostaria%20de%20um%20or%C3%A7amento"
+          className="inline-block bg-purple-600 hover:bg-purple-400 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
+        >
+          Solicitar Orçamento
+        </a>
       </div>
 
 

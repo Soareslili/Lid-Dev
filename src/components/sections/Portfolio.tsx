@@ -10,9 +10,9 @@ const demoItems = [
     link: "https://barbearia-stilo-w7hq.vercel.app/",
   },
   {
-    image: "/assets/bella.webp",
-    text: "Bella Nails",
-    link: "https://studio-bella-nails-kc3d.vercel.app/",
+    image: "/assets/Visto.png",
+    text: "Visaconsulting",
+    link: "https://visa-consulting-4c1z.vercel.app/",
   },
   {
     image: "/assets/luna.png",
